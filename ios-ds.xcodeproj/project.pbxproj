@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E232B0D24F33EBB0035EC51 /* DriverStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E232B0C24F33EBB0035EC51 /* DriverStation.swift */; };
+		0E232B0F24F33EE10035EC51 /* Alliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E232B0E24F33EE10035EC51 /* Alliance.swift */; };
+		0E232B1124F344690035EC51 /* DSMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E232B1024F344690035EC51 /* DSMode.swift */; };
+		0E232B1324F347390035EC51 /* GameMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E232B1224F347390035EC51 /* GameMode.swift */; };
 		0E55952024F1DF2F00646597 /* ios_dsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55951F24F1DF2F00646597 /* ios_dsApp.swift */; };
 		0E55952224F1DF2F00646597 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55952124F1DF2F00646597 /* ContentView.swift */; };
 		0E55952424F1DF3000646597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E55952324F1DF3000646597 /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E232B0C24F33EBB0035EC51 /* DriverStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverStation.swift; sourceTree = "<group>"; };
+		0E232B0E24F33EE10035EC51 /* Alliance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alliance.swift; sourceTree = "<group>"; };
+		0E232B1024F344690035EC51 /* DSMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSMode.swift; sourceTree = "<group>"; };
+		0E232B1224F347390035EC51 /* GameMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMode.swift; sourceTree = "<group>"; };
 		0E55951C24F1DF2F00646597 /* ios-ds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-ds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E55951F24F1DF2F00646597 /* ios_dsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_dsApp.swift; sourceTree = "<group>"; };
 		0E55952124F1DF2F00646597 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +114,10 @@
 				0E55952324F1DF3000646597 /* Assets.xcassets */,
 				0E55952824F1DF3000646597 /* Info.plist */,
 				0E55952524F1DF3000646597 /* Preview Content */,
+				0E232B0C24F33EBB0035EC51 /* DriverStation.swift */,
+				0E232B0E24F33EE10035EC51 /* Alliance.swift */,
+				0E232B1024F344690035EC51 /* DSMode.swift */,
+				0E232B1224F347390035EC51 /* GameMode.swift */,
 			);
 			path = "ios-ds";
 			sourceTree = "<group>";
@@ -276,6 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E55952224F1DF2F00646597 /* ContentView.swift in Sources */,
+				0E232B0D24F33EBB0035EC51 /* DriverStation.swift in Sources */,
+				0E232B1324F347390035EC51 /* GameMode.swift in Sources */,
+				0E232B1124F344690035EC51 /* DSMode.swift in Sources */,
+				0E232B0F24F33EE10035EC51 /* Alliance.swift in Sources */,
 				0E55952024F1DF2F00646597 /* ios_dsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
