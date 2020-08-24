@@ -7,18 +7,27 @@
 
 import Foundation
 
+
+/// Global stdout (message queue)
+var messageQueue = MessageStack()
+
 /// This class is a wrapper around the C DriverStation class to make it
 /// more usable from Swift code.
 class DriverStation {
   /// The DriverStation instance.
   var ds: OpaquePointer;
   
+  
   /// Creates a DriverStation with a given team number and alliance.
   init(team: UInt32, alliance: Alliance) {
+    // Create driver station
     ds = DS_DriverStation_new_team(team, DriverStation.getRawAlliance(alliance: alliance))
+    
+    // Add this DS's messages to the global message queue.
+    setTCPConsumer()
   }
   
-  /// Destroys the driver station instance when this class is destyored.
+  /// Destroys the driver station instance when this class is destroyed.
   deinit {
     DS_DriverStation_destroy(ds);
   }
@@ -101,6 +110,12 @@ class DriverStation {
     DS_DriverStation_set_team_number(ds, team)
   }
   
+  private func setTCPConsumer() {
+    DS_DriverStation_set_tcp_consumer(ds) { (msg: StdoutMessage) in
+      messageQueue.push(String(cString: msg.message))
+    }
+  }
+
   /// Return pointer to alliance type from the Alliance enum.
   private static func getRawAlliance(alliance: Alliance) -> OpaquePointer {
     switch alliance {
